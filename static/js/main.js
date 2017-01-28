@@ -43,7 +43,7 @@ function main() {
   var favoriteButton = document.getElementById('favorite-button');
 
   favoriteButton.onclick = function() {
-    ga('send', 'event', 'Header', 'Favorite_Button');
+    ga('send', 'event', 'Header', 'Toggle_Favorite_Button');
     toggleFavorite();
   };
 }
