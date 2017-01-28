@@ -1,0 +1,77 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: static/index.html
+  upload: static/index.html
+  expiration: "0m"
+
+- url: /json/lineas-bus-secuencia
+  script: lineas-bus-secuencia.app
+
+- url: /mapa
+  secure: always
+  static_files: static/mapa/index.html
+  upload: static/mapa/index.html
+  expiration: "0m"  
+
+- url: /(.*\.(appcache|manifest))
+  mime_type: text/cache-manifest
+  static_files: static/\1
+  upload: static/(.*\.(appcache|manifest))
+  expiration: "0m"
+
+- url: /(.*\.css)
+  mime_type: text/css
+  static_files: static/\1
+  upload: static/(.*\.css)
+  expiration: "0d"
+
+- url: /(.*\.html)
+  mime_type: text/html
+  static_files: static/\1
+  upload: static/(.*\.html)
+  expiration: "0d"
+
+- url: /(.*\.ico)
+  mime_type: image/x-icon
+  static_files: static/\1
+  upload: static/(.*\.ico)
+  expiration: "1d"
+
+- url: /(.*\.js)
+  mime_type: text/javascript
+  static_files: static/\1
+  upload: static/(.*\.js)
+  expiration: "0d"
+
+- url: /(.*\.json)
+  mime_type: application/json
+  static_files: static/\1
+  upload: static/(.*\.json)
+  expiration: "0d"
+  application_readable: true
+
+- url: /(.*\.txt)
+  mime_type: text/plain
+  static_files: static/\1
+  upload: static/(.*\.txt)
+
+# image files
+- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  static_files: static/\1
+  upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  expiration: "7"
+
+# index files
+- url: /(.+)/
+  static_files: static/\1/index.html
+  upload: static/(.+)/index.html
+  expiration: "0m"
+
+- url: /(.+)
+  static_files: static/\1/index.html
+  upload: static/(.+)/index.html
+  expiration: "0m"  

@@ -1,0 +1,3 @@
+# Kenny is the name, coding is my game.
+User-agent: *
+Sitemap: https://tus-estimaciones.appspot.com/sitemap.xml

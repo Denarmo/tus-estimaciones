@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Estimaciones de TUS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- DNS Prefetching -->
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="dns-prefetch" href="//datos.santander.es" />
+    <!-- Search Engines -->
+    <meta content="index,follow,archive" name="robots" />
+    <meta content="Estimaciones de TUS" name="title" />
+    <meta content="Ver las estimaciones de los autobuses del transporte urbano de Santander según la parada en la que te encuentres." name="description" />
+    <meta content="tus, estimaciones, autobuses, santander, linea, parada" name="keywords" />
+    <meta content="Miguel Ripoll" name="author" />
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-v1.png" />
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#3895f0" />
+    <!-- Manifest and theme color -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#f9f9f9" />
+    <!-- /css/main.min.css !-->
+    <style>
+      #back-button,.long-button,body.stop-estimations .line{cursor:pointer}#header,#source{text-align:center}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Arial;font-size:15px;background-color:#f9f9f9}body.home{background-color:#fff}a{text-decoration:none;color:#3895f0}#header{float:left;width:100%;top:0;background:rgba(249,249,249,.8);position:sticky;position:-webkit-sticky;-webkit-backdrop-filter:blur(5px);font-weight:700;border-bottom:1px solid #e1e8ed;margin-bottom:10px}body.line-estimations #header,body.stop-estimations #header,body.stops-route #header{margin-bottom:0}#header-content{width:92%;margin:auto;display:flex;align-items:center;justify-content:center;overflow:auto;clear:both}#header-center,#header-left,#header-right{display:flex;flex:1}#back-button{display:none;height:25px;width:100px;vertical-align:middle}#back-button img{float:left;height:25px}#back-button span{float:left;position:relative;top:4px;left:6px;color:#3895f0}#header-center p{font-size:15px;margin:14px auto}#header-right #favorite-button{display:none;cursor:pointer;margin-left:auto;background-image:url(/images/heart-min.png);background-repeat:no-repeat;background-position:center center;background-size:contain;height:25px;width:29px}body.home #content,body.line-estimations #content,body.stop-estimations #content,body.stops-route #content{max-width:800px;margin:auto;clear:both}#map-link,.long-button{margin-bottom:6px;float:left;width:100%}#map-img{float:left;border-radius:5px 5px 0 0;width:100%}#ask-stop-button input{background:0 0;border:0;padding:12px 14px;font-size:15px;color:#fff;width:100%;box-sizing:border-box;outline:0}input::-webkit-input-placeholder{color:#fff}input::-moz-placeholder{color:#fff}input:-ms-input-placeholder{color:#fff}input:-moz-placeholder{color:#fff}input:focus::-webkit-input-placeholder{font-size:0}input:focus::-moz-placeholder{font-size:0}input:focus:-ms-input-placeholder{font-size:0}input:focus:-moz-placeholder{font-size:0}.long-button{background-color:#3895f0;border-radius:5px}.long-button#map-button{border-radius:0 0 5px 5px;margin-bottom:0}.long-button span{margin:12px 14px;float:left;color:#fff}#favorites #favorite-information{float:left;width:100%;margin:45px 0;text-align:center;color:rgba(0,0,0,.654)}#favorites #favorite-information .text{width:300px;margin:auto}#favorites .long-button{background-color:#f05d4a}#favorites .long-button:last-child{margin-bottom:15px}body.line-estimations #lines,body.stop-estimations #lines,body.stops-route #stops{border-left:1px solid #e1e8ed;border-right:1px solid #e1e8ed;margin-bottom:6px;background:#fff}#error,#loading,.line,.stop{padding:4px 18px;height:102px;background:#fff;border-bottom:1px solid #e1e8ed}.stop{height:auto}.time1{margin-bottom:3px}.time2{margin-top:3px}#bus-buttons{margin:20px auto 0;overflow:auto}#bus-buttons .long-button:last-child{margin-bottom:0}#source{max-width:800px;margin:auto;clear:both}#source p{display:inline-block;padding:4px 18px}@media (max-width:850px){body.home #header-center{overflow:hidden;position:relative;top:1.5px}body.home #content{width:95%}#favorites #favorite-information .text{width:260px}body.line-estimations #lines,body.stop-estimations #lines,body.stops-route #lines{width:100%;max-width:100%;margin-bottom:6px;border-left:none;border-right:none}#bus-buttons{width:95%;margin:auto;clear:both;overflow:auto}#source{float:left;width:100%;margin:0}}
+    </style>
+    <!-- Google Analytics !-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89256175-1', 'auto');
+    </script>
+  </head>
+  <body class="home">
+    <div id="header">
+      <div id="header-content">
+        <div id="header-left">
+          <div id="back-button">
+            <img alt="Atrás" src="/images/back-min.png" />
+            <span>Atrás</span>
+          </div>
+        </div>
+        <div id="header-center">
+          <p>Estimaciones</p>
+        </div>
+        <div id="header-right">
+          <span id="favorite-button"></span>
+        </div>
+      </div>
+    </div>
+    <div id="content"></div>
+    <script async src="/js/main.min.js?v=1.6"></script>
+  </body>
+</html>
